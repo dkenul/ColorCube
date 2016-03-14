@@ -19,21 +19,10 @@
 
 		<script src="js/three.min.js"></script>
     <script src="js/OrbitControls.js"></script>
-		<script src="js/tween.min.js"></script>
-		<script src="js/TrackballControls.js"></script>
-		<script src="js/CSS3DRenderer.js"></script>
-
-
 
 		<script>
 
-    var container, stats;
-
-    var camera, controls, scene, renderer;
-
-    var cross;
-
-    var headlight;
+    var container, camera, controls, scene, renderer, headlight;
 
     init();
     animate();
@@ -232,6 +221,8 @@
         camera.updateProjectionMatrix();
 
         renderer.setSize( window.innerWidth, window.innerHeight );
+
+				render();
       }, false );
 
     }
